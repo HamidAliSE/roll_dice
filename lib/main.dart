@@ -5,7 +5,11 @@ import 'package:roll_dice/gradient_container.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(body: Center(child: GradientContainer())),
+      home: Scaffold(
+        body: Center(
+          child: GradientContainer(Colors.lightBlueAccent, Colors.limeAccent),
+        ),
+      ),
     ),
   );
 }
