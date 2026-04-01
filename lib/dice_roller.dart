@@ -22,9 +22,18 @@ class _DiceRollerState extends State<DiceRoller> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset('assets/images/dice-$currentDiceRoll.png'),
-        TextButton(onPressed: rollDice, child: Text('Roll Dice')),
+        Image.asset('assets/images/dice-$currentDiceRoll.png', width: 200),
+        SizedBox(height: 20),
+        TextButton(
+          onPressed: rollDice,
+          style: TextButton.styleFrom(
+            foregroundColor: Colors.indigo,
+            textStyle: TextStyle(fontSize: 28),
+          ),
+          child: Text('Roll Dice'),
+        ),
       ],
     );
   }
