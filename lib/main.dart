@@ -6,9 +6,7 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: GradientContainer(Colors.lightBlueAccent, Colors.limeAccent),
-        ),
+        body: GradientContainer(Colors.lightBlueAccent, Colors.limeAccent),
       ),
     ),
   );
