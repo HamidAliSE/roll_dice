@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(body: Center(child: const Text('Hello World!'))),
+      home: Scaffold(
+        body: Center(child: Image.asset('assets/images/dice-1.png')),
+      ),
     ),
   );
 }
